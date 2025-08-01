@@ -1,30 +1,41 @@
 body {
   margin: 0;
   font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
-  background: linear-gradient(135deg, #232526 0%, #414345 100%);
-  color: #f5f5f5;
+  background: #181a20;
+  color: #e3e6ee;
   min-height: 100vh;
 }
+
 header {
-  padding: 2.5em 1em 1.5em 1em;
+  padding: 3em 1em 2em 1em;
   text-align: center;
-  background: rgba(34,34,34,0.92);
-  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
-  border-bottom: 1px solid #2c2c2c;
+  background: #23262f;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  border-bottom: 1px solid #23262f;
   position: sticky;
   top: 0;
   z-index: 10;
 }
+
 header h1 {
   margin: 0.2em 0 0 0;
-  font-size: 2.5em;
+  font-size: 3em;
   letter-spacing: 0.04em;
   font-weight: 800;
-  background: linear-gradient(90deg, #7ecfff 30%, #b0d8ff 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #e3e6ee;
+  background: none;
 }
+
+header .subtitle {
+  margin: 0.6em 0 0 0;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #7ecfff;
+  letter-spacing: 0.02em;
+  opacity: 0.95;
+  text-shadow: none;
+}
+
 header a {
   color: #7ecfff;
   text-decoration: none;
@@ -39,60 +50,103 @@ header a:hover {
 }
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2em;
-  padding: 3em 1em 2em 1em;
-  max-width: 1300px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5em;
+  padding: 3em 2em 2em 2em;
+  max-width: 1200px;
   margin: 0 auto;
 }
+
 .video-card {
-  background: rgba(35,35,35,0.98);
-  border-radius: 18px;
+  background: #23262f;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 4px 32px rgba(0,0,0,0.18), 0 1.5px 8px rgba(126,207,255,0.04);
+  box-shadow: 0 2px 16px rgba(0,0,0,0.18);
   transition: transform 0.18s cubic-bezier(.4,2,.6,1), box-shadow 0.18s, border 0.18s;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  border: 1.5px solid transparent;
+  border: 1px solid #23262f;
 }
+
 .video-card:hover, .video-card:focus {
-  transform: translateY(-8px) scale(1.045);
-  box-shadow: 0 8px 40px 0 rgba(126,207,255,0.18), 0 2px 16px rgba(0,0,0,0.22);
+  transform: translateY(-6px) scale(1.025);
+  box-shadow: 0 6px 32px 0 rgba(126,207,255,0.10), 0 2px 8px rgba(0,0,0,0.18);
   border: 1.5px solid #7ecfff;
 }
+
 .video-card video {
   width: 100%;
   aspect-ratio: 16/9;
   object-fit: cover;
-  background: #111;
+  background: #181a20;
   display: block;
-  border-bottom: 1.5px solid #232323;
+  border-bottom: 1px solid #23262f;
   transition: filter 0.18s;
 }
+
 .video-card:hover video, .video-card:focus video {
   filter: brightness(1.08) saturate(1.15) drop-shadow(0 0 16px #7ecfff44);
 }
+
 .video-card .video-title {
   padding: 1.1em 1.2em 1em 1.2em;
-  font-size: 1.18em;
+  font-size: 1.15em;
   font-weight: 700;
   color: #7ecfff;
   text-align: left;
   letter-spacing: 0.01em;
-  text-shadow: 0 1px 8px #23232344;
+  text-shadow: none;
 }
-@media (max-width: 600px) {
-  .video-grid {
-    grid-template-columns: 1fr;
-    padding: 1.2em 0.2em;
-    gap: 1.2em;
-  }
-  header h1 {
-    font-size: 1.5em;
-  }
+
+footer {
+  width: 100%;
+  background: #23262f;
+  color: #b0d8ff;
+  padding: 2.5em 1em 2em 1em;
+  text-align: center;
+  border-top: 1px solid #23262f;
+  font-size: 1.08em;
+  margin-top: 4em;
+  box-shadow: 0 -2px 16px 0 rgba(0,0,0,0.12);
 }
+
+.footer-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 1.18em;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.2em;
+  color: #7ecfff;
+}
+
+.footer-desc {
+  color: #b0d8ff;
+  font-size: 1em;
+  margin-bottom: 0.5em;
+  opacity: 0.85;
+}
+
+.footer-contact {
+  font-size: 0.98em;
+  color: #b0d8ff;
+}
+
+.footer-contact a {
+  color: #7ecfff;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.footer-contact a:hover {
+  color: #e3e6ee;
+}
+
 main {
   min-height: 70vh;
   display: flex;
@@ -116,4 +170,25 @@ p#videoDescription {
   max-width: 700px;
   line-height: 1.6;
   text-shadow: 0 1px 8px #23232344;
+}
+
+@media (max-width: 600px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+    padding: 1.2em 0.2em;
+    gap: 1.2em;
+  }
+  header h1 {
+    font-size: 2em;
+  }
+  header .subtitle {
+    font-size: 1em;
+  }
+  .footer-content {
+    font-size: 0.95em;
+    padding: 0 0.2em;
+  }
+  .footer-title {
+    font-size: 1em;
+  }
 }
