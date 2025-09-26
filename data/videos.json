@@ -1,44 +1,73 @@
 [
   {
     "id": 1,
-    "title": "Sunset Overdrive",
-    "description": "A quick look at a vibrant sunset over the city skyline.",
+    "title": "AI photo insert",
+    "description": "Test",
     "preview": "video1-preview.mp4",
-    "full": "video1-full.mp4"
+    "full": "video1-full.mp4",
+    "content": [
+      { "type": "heading", "level": 2, "text": "Overview" },
+      { "type": "paragraph", "text": "This project demonstrates AI-assisted image insertion into live-action plates while preserving natural lighting and texture detail." },
+      { "type": "image", "src": "videos/video1-preview.mp4", "alt": "Preview still", "caption": "Preview frame from the composite." },
+      { "type": "heading", "level": 2, "text": "Workflow" },
+      { "type": "paragraph", "text": "The pipeline includes subject segmentation, color normalization, light wrapping, and grain synthesis to match the target plate." }
+    ]
   },
   {
     "id": 2,
     "title": "Forest Stream",
-    "description": "A peaceful stream flowing through a lush green forest.",
+    "description": "A peaceful stream winding through a lush, moss-covered forest. Soft morning light filters through the canopy while water glides over polished stones. The ambient soundscape and gentle motion invite a slow, meditative pause.",
     "preview": "video2-preview.mp4",
-    "full": "video2-full.mp4"
+    "full": "video2-full.mp4",
+    "content": [
+      { "type": "heading", "level": 2, "text": "Location" },
+      { "type": "paragraph", "text": "Captured at dawn to emphasize soft diffusion and cooler tones." },
+      { "type": "image", "src": "images/forest-still.jpg", "alt": "Forest stream still", "caption": "Still frame highlighting surface texture." }
+    ]
   },
   {
     "id": 3,
     "title": "Urban Rush",
-    "description": "Fast-paced city life captured in a bustling downtown.",
+    "description": "Fast-paced city life captured in a bustling downtown corridor. Headlights streak into neon trails as crosswalks and storefronts pulse with energy. The rhythm of traffic, footsteps, and signage paints a vibrant portrait of the modern metropolis.",
     "preview": "video3-preview.mp4",
-    "full": "video3-full.mp4"
+    "full": "video3-full.mp4",
+    "content": [
+      { "type": "heading", "level": 2, "text": "Technique" },
+      { "type": "paragraph", "text": "Longer shutter plus stabilized handheld to balance motion blur with legibility." },
+      { "type": "image", "src": "images/urban-trails.jpg", "alt": "Light trails", "caption": "Light trails accentuate flow." }
+    ]
   },
   {
     "id": 4,
     "title": "Mountain Clouds",
-    "description": "Clouds rolling over majestic mountain peaks.",
+    "description": "Low clouds drift and unravel across jagged mountain peaks, revealing and concealing the ridgelines in slow motion. Shifting light sculpts the terrain, giving each moment a different character. A calm, cinematic study in scale and atmosphere.",
     "preview": "video4-preview.mp4",
-    "full": "video4-full.mp4"
+    "full": "video4-full.mp4",
+    "content": [
+      { "type": "heading", "level": 2, "text": "Time-lapse Details" },
+      { "type": "paragraph", "text": "Shot over several hours with interval ramping to keep cloud motion smooth." }
+    ]
   },
   {
     "id": 5,
     "title": "Neon Nights",
-    "description": "A neon-lit street scene at night, full of color and life.",
+    "description": "A rain-slicked street glows with reflections from neon signs and passing scooters. Saturated color spills across puddles while storefronts hum with late-night energy. The scene balances grit and glamour in a stylish nocturnal palette.",
     "preview": "video5-preview.mp4",
-    "full": "video5-full.mp4"
+    "full": "video5-full.mp4",
+    "content": [
+      { "type": "heading", "level": 2, "text": "Color Approach" },
+      { "type": "paragraph", "text": "Selective saturation and contrast curves to emphasize chroma without clipping skintones." }
+    ]
   },
   {
     "id": 6,
     "title": "Ocean Calm",
-    "description": "Gentle waves lapping at a quiet beach at dawn.",
+    "description": "Gentle waves fold onto a quiet shoreline at first light. Pastel hues wash across the water as the horizon slowly brightens. A minimalist, restorative moment that invites deep breathing and stillness.",
     "preview": "video6-preview.mp4",
-    "full": "video6-full.mp4"
+    "full": "video6-full.mp4",
+    "content": [
+      { "type": "heading", "level": 2, "text": "Sound Design" },
+      { "type": "paragraph", "text": "Layered field recordings of surf and wind to create a calming bed." }
+    ]
   }
 ]
