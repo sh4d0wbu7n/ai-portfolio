@@ -2,15 +2,13 @@
   {
     "id": 1,
     "title": "AI photo insert",
-    "description": "Test",
     "preview": "video1-preview.mp4",
     "full": "video1-full.mp4",
     "content": [
       { "type": "heading", "level": 2, "text": "Overview" },
-      { "type": "paragraph", "text": "This project demonstrates AI-assisted image insertion into live-action plates while preserving natural lighting and texture detail." },
-      { "type": "image", "src": "videos/video1-preview.mp4", "alt": "Preview still", "caption": "Preview frame from the composite." },
-      { "type": "heading", "level": 2, "text": "Workflow" },
-      { "type": "paragraph", "text": "The pipeline includes subject segmentation, color normalization, light wrapping, and grain synthesis to match the target plate." }
+      { "type": "paragraph", "text": "My AI-driven photo insert solution with WAN 2.1 VACE provides a powerful way to seamlessly integrate new visual elements into existing footage. With this approach, I am able to reduce production costs by at least 50% compared to traditional VFX workflows, without compromising on quality." },
+      { "type": "heading", "level": 2, "text": "Limitations" },
+      { "type": "paragraph", "text": "Currently, this technique is available for still image inserts only. Full moving-image inserts are not yet supported." }
     ]
   },
   {
