@@ -13,14 +13,13 @@
   },
   {
     "id": 2,
-    "title": "Forest Stream",
-    "description": "A peaceful stream winding through a lush, moss-covered forest. Soft morning light filters through the canopy while water glides over polished stones. The ambient soundscape and gentle motion invite a slow, meditative pause.",
+    "title": "House on fire",
     "preview": "video2-preview.mp4",
     "full": "video2-full.mp4",
     "content": [
-      { "type": "heading", "level": 2, "text": "Location" },
-      { "type": "paragraph", "text": "Captured at dawn to emphasize soft diffusion and cooler tones." },
-      { "type": "image", "src": "images/forest-still.jpg", "alt": "Forest stream still", "caption": "Still frame highlighting surface texture." }
+      { "type": "heading", "level": 2, "text": "Overview" },
+      { "type": "paragraph", "text": "House explosion using FLF (first frame last frame) method. Start Frame is the real house. Inpaint the explosion via seadream 4.0 to get the last frame. After that I gave it to Hailou 2.0 to get the final video. Sound was added via AI video2sound method. The finals steps were upscaling and frame interpolation to 1080p at 60 fps and finishing in Nuke." },
+      { "type": "image", "src": "images/forest-still.jpg", "alt": "Forest stream still", "caption": "First frame of the real house." }
     ]
   },
   {
